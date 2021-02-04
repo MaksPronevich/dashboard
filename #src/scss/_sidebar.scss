@@ -1,0 +1,41 @@
+.sidebar {
+    grid-area: sidebar;
+    // height: 852px;
+    background-color: $black;
+    color: $white;
+    border-radius: 24px;
+    box-shadow: 3px 3px 10px $black;
+}
+
+.sidebar__logo {
+    margin: 15px auto 0px;
+    text-align: center;
+    
+    a {
+        span {
+            font-size: 64px;
+            font-weight: 900;
+            color: $white;
+        }
+    }
+}
+
+.sidebar__nav {
+    margin-top: 60px;
+}
+
+
+.sidebar__list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
+}
+
+.sidebar__item {
+    margin-bottom: 60px;
+
+    &:last-child {
+        margin-top: 160px;
+    }
+}

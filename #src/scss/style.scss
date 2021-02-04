@@ -1,0 +1,77 @@
+@import "variables";
+
+
+*,
+*:before,
+*:after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Baloo Bhai 2', cursive;
+    
+    color: $black;
+    background-color: $white;
+}
+
+a {
+    text-decoration: none;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 132px 2fr 1.3fr;
+    gap: 1em;
+    grid-template-areas:
+     "sidebar header navigation"
+     "sidebar header stat-boxes"
+     "sidebar course statistics"
+     "sidebar courses statistics"
+     "sidebar courses statistics"
+     "sidebar courses premium-banner";
+    max-width: 100%;
+    padding: 30px;
+
+    @media (max-width: $xl) {
+        max-width: 960px;
+    }
+
+    @media (max-width: $lg) {
+        max-width: 720px;
+    }
+
+    @media (max-width: $md) {
+        max-width: 540px;
+    }
+
+    @media (max-width: $sm) {
+        max-width: none;
+    }
+}
+
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+
+/*import files*/
+@import "common";
+@import "sidebar";
+@import "header";
+@import "course";
+@import "courses";
+@import "navigation";
+@import "stat-boxes";
+@import "statistics";
+@import "premium-banner";
+

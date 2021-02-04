@@ -1,0 +1,15 @@
+.premium-banner {
+    display: flex;
+    justify-content: space-around;
+    grid-area: premium-banner;
+    // width: 438px;
+    // height: 193px;
+    background-color: $gray;
+    border-radius: 14px;
+}
+
+.premium-banner__descr {
+    h3 {
+       
+    }
+}
