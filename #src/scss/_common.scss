@@ -1,9 +1,18 @@
 .btn {
     display: inline-block;
     background-color: $black;
+    border: 1px solid $black;
     color: $white;
     border-radius: 8px;
-    padding: 10px 22px;
+    padding: 9px 21px;
+    transition: all .2s ease;
+
+    
+
+    &:hover {
+        color: $black;
+        background-color: $white;
+    }
 }
 
 .title {
@@ -15,4 +24,8 @@
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
     line-height: 24px;
+
+    &.premium-banner__text {
+        margin: 10px 0px 24px;
+    }
 }
