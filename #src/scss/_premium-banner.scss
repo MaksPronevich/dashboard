@@ -1,17 +1,10 @@
 .premium-banner {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    column-gap: 2em;
     grid-area: premium-banner;
     padding: 20px;
-    // width: 438px;
     // height: 193px;
     background-color: $gray;
     border-radius: 14px;
-}
-
-.premium-banner__descr {
-    h3 {
-       
-    }
 }

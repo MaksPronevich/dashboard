@@ -7,8 +7,6 @@
     padding: 9px 21px;
     transition: all .2s ease;
 
-    
-
     &:hover {
         color: $black;
         background-color: $white;
@@ -27,5 +25,49 @@
 
     &.premium-banner__text {
         margin: 10px 0px 24px;
+    }
+
+    &.box__text {
+        margin-left: 11px;
+    }
+}
+
+.tabs {
+    margin-top: 16px;
+}
+
+.tabs__nav {
+
+}
+
+.tabs__list {
+    display: flex;
+    list-style: none;
+}
+
+.tab__title {
+    margin-right: 30px;
+
+    a {
+        color: rgba($black, 0.4);
+        font-size: 16px;
+        font-weight: 700;
+        transition: all .2s ease;
+    }
+
+    &:hover, 
+    &.active {
+        a {
+            color: $black;
+        }
+        
+    }
+}
+
+.tab__block {
+    display: none;
+
+    &.active {
+        display: block;
     }
 }

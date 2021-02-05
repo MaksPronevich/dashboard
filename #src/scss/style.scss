@@ -28,7 +28,9 @@ a {
 .wrapper {
     display: grid;
     grid-template-columns: 132px 2fr 1.2fr;
-    gap: 1em;
+    column-gap: 3em;
+    row-gap: 2em;
+    // gap: 1em;
     grid-template-areas:
      "sidebar header navigation"
      "sidebar header stat-boxes"

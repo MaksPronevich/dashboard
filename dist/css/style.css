@@ -1,9 +1,7 @@
 .sidebar,
 .header,
 .course,
-.courses,
 .navigation,
-.stat-boxes,
 .statistics {
   border: 1px solid black;
 }
@@ -35,8 +33,11 @@ a {
 .wrapper {
   display: grid;
   grid-template-columns: 132px 2fr 1.2fr;
-  gap: 1em;
-  grid-template-areas: "sidebar header navigation" "sidebar header stat-boxes" "sidebar course statistics" "sidebar courses statistics" "sidebar courses statistics" "sidebar courses premium-banner";
+  -webkit-column-gap: 3em;
+  -moz-column-gap: 3em;
+  column-gap: 3em;
+  row-gap: 2em;
+  grid-template-areas: "sidebar header navigation" "sidebar header stat-boxes" "sidebar course statistics" "sidebar courses statistics" "sidebar courses statistics" "sidebar courses premium-banner";
   max-width: 100%;
   padding: 30px;
 }
@@ -79,6 +80,47 @@ img {
 
 .text.premium-banner__text {
   margin: 10px 0px 24px;
+}
+
+.text.box__text {
+  margin-left: 11px;
+}
+
+.tabs {
+  margin-top: 16px;
+}
+
+.tabs__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+}
+
+.tab__title {
+  margin-right: 30px;
+}
+
+.tab__title a {
+  color: rgba(0, 0, 0, 0.4);
+  font-size: 16px;
+  font-weight: 700;
+  -webkit-transition: all .2s ease;
+  -o-transition: all .2s ease;
+  transition: all .2s ease;
+}
+
+.tab__title:hover a,
+.tab__title.active a {
+  color: #000;
+}
+
+.tab__block {
+  display: none;
+}
+
+.tab__block.active {
+  display: block;
 }
 
 .sidebar {
@@ -150,8 +192,32 @@ img {
 }
 
 .stat-boxes {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  -webkit-column-gap: 2em;
+  -moz-column-gap: 2em;
+  column-gap: 2em;
   grid-area: stat-boxes;
-  height: 106px;
+}
+
+.box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #F5F5F7;
+  border-radius: 14px;
+  padding: 18px 30px;
+}
+
+.box__num {
+  font-size: 64px;
+  font-weight: 700;
 }
 
 .statistics {
@@ -160,15 +226,11 @@ img {
 }
 
 .premium-banner {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  -webkit-column-gap: 2em;
+  -moz-column-gap: 2em;
+  column-gap: 2em;
   grid-area: premium-banner;
   padding: 20px;
   background-color: #F5F5F7;

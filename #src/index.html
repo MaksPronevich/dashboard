@@ -29,12 +29,52 @@
                 </ul>
             </nav>
         </aside>
+
         <header class="header">Hello Josn!</header>
+
         <section class="course">course</section>
-        <section class="courses">courses</section>
+
+        <section class="courses">
+            <div class="title">Courses</div>
+            <div class="tabs">
+                <nav class="tabs__nav">
+                    <ul class="tabs__list">
+                        <li class="tab__title active"><a href="#">All Courses</a></li>
+                        <li class="tab__title"><a href="#">The Newest</a></li>
+                        <li class="tab__title"><a href="#">Top Rated</a></li>
+                        <li class="tab__title"><a href="#">Most Popular</a></li>
+                    </ul>
+                </nav>
+                <div class="tabs__body">
+                    <div class="tab__block active">
+                        <div class="courses__wrap">
+                            <div class="courses__item">
+                                1
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab__block">2</div>
+                    <div class="tab__block">3</div>
+                    <div class="tab__block">4</div>
+                </div>
+            </div>
+        </section>
+
         <section class="navigation">navigation</section>
-        <section class="stat-boxes">stat-boxes</section>
+
+        <section class="stat-boxes">
+            <div class="box">
+                <div class="box__num">11</div>
+                <p class="text box__text">Courses<br>completed</p>
+            </div>
+            <div class="box">
+                <div class="box__num">4</div>
+                <p class="text box__text">Courses<br>in progress</p>
+            </div>
+        </section>
+
         <section class="statistics">statistics</section>
+
         <section class="premium-banner">
             <div class="premium-banner__descr">
                 <h3 class="title">Learn even more!</h3>
@@ -48,7 +88,7 @@
     </div>
 
 
-    <script src="js/app.min.js"></script>
+    <script src="js/app.min.js" type="module"></script>
 </body>
 
 </html>

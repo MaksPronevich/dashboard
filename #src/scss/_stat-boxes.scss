@@ -1,5 +1,25 @@
 .stat-boxes {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 2em;
     grid-area: stat-boxes;
     // width: 438px;
-    height: 106px;
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $gray;
+    border-radius: 14px;
+    padding: 18px 30px;
+
+    &__num {
+        font-size: 64px;
+        font-weight: 700;
+    }
+
+    &__text {
+
+    }
 }
