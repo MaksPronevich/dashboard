@@ -3,3 +3,52 @@
     // width: 620px;
     height: 554px;
 }
+
+.courses__wrap {
+    height: 500px;
+    margin-top: 10px;
+    padding-right: 10px;
+    overflow-y: scroll;
+}
+
+.courses__item {
+    display: grid;
+    grid-template-columns: 0.5fr 1.5fr 0.5fr 0.5fr auto;
+    column-gap: 2em;
+    align-items: center;
+    padding: 10px 25px 10px 10px;
+    margin-bottom: 15px;
+    background-color: $gray;
+    border-radius: 14px;
+}
+
+.course__logo {
+    width: 64px;
+    height: 64px;
+    border-radius: 12px;
+    background-color: $white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.course__descr {
+    h4 {
+        font-size: 16px;
+        font-weight: 700;
+    }
+}
+
+.course__time, 
+.course__rating {
+    display: flex;
+    align-items: center;
+
+    span {
+        font-family: 'Roboto', sans-serif;
+        font-size: 13px;
+        margin-left: 8px;
+        padding-top: 4px;
+    }
+}
+
