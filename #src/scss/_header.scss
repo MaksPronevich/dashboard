@@ -1,7 +1,19 @@
 .header {
+    display: grid;
+    grid-template-columns: 1.5fr 2fr;
+    column-gap: 2em;
+    align-items: center;
     grid-area: header;
+    padding: 30px;
     // width: 620px;
-    height: 191.25px;
+    // height: 191.25px;
     background-color: $gray;
     border-radius: 14px;
+}
+
+.header__desrc {
+    h2 {
+        font-size: 36px;
+        font-weight: 700;
+    }
 }

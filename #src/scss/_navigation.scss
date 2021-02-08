@@ -1,5 +1,47 @@
 .navigation {
+    display: grid;
+    grid-template-columns: 3fr 1fr 1fr;
+    column-gap: 2em;
+    align-items: center;
     grid-area: navigation;
     // width: 438px;
-    height: 43px;
+}
+
+.search {
+    display: flex;
+    background-color: $gray;
+    border-radius: 14px;
+    padding: 10px;
+
+    input {
+        width: 100%;
+        height: auto;
+        border: none;
+        outline: none;
+        background-color: $gray;
+        font-family: 'Roboto', sans-serif;
+        font-size: 16px;
+        margin-left: 10px;
+    }
+}
+
+.notifications {
+    
+    a {
+        position: relative;
+
+        &:before {
+            color: $white;
+            content: '1';
+            text-align: center;
+            vertical-align: middle;
+            position: absolute;
+            right: -35px;
+            top: -15px;
+            background: #F45B5B;
+            border-radius: 50%;
+            width: 20px;
+            height: 20px;
+        }
+    }
 }
