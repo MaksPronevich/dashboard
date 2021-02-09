@@ -5,15 +5,15 @@
 }
 
 .courses__wrap {
-    height: 500px;
+    // height: 500px;
     margin-top: 10px;
     padding-right: 10px;
-    overflow-y: scroll;
+    // overflow-y: auto;
 }
 
 .courses__item {
     display: grid;
-    grid-template-columns: 0.5fr 1.5fr 0.5fr 0.5fr auto;
+    grid-template-columns: 0.3fr 1.4fr 0.8fr 0.4fr auto;
     column-gap: 2em;
     align-items: center;
     padding: 10px 25px 10px 10px;

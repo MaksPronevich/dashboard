@@ -1,0 +1,27 @@
+.swiper-container {
+    display: flex;
+    width: 100%;
+}
+
+.swiper-nav {
+    display: flex;
+    justify-content: space-around;
+    margin-left: 40px;
+}
+
+.slider-button-prev,
+.slider-button-next {
+    display: block;
+    width: 42px;
+    height: 42px;
+    outline: none;
+}
+
+.slider-button-prev {
+    background: url('../img/slider-btn-prev.svg') no-repeat;
+}
+
+.slider-button-next {
+    background: url('../img/slider-btn-next.svg') no-repeat;
+}
+

@@ -13,3 +13,18 @@ tabTitles.forEach((tabBlock, i) => tabBlock.addEventListener("click", e => {
     e.preventDefault();
 }));
 
+
+new Swiper('.swiper-container', {
+    navigation: {
+        nextEl: '.slider-button-next',
+        prevEl: '.slider-button-prev',
+    },
+
+    autoplay: {
+        delay: 2000,
+    },
+
+    touchRatio: 2,
+    grabCursor: true,
+    loop: true,
+});

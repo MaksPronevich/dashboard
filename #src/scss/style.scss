@@ -16,7 +16,6 @@ html {
 body {
     font-family: 'Roboto', sans-serif;
     font-family: 'Baloo Bhai 2', cursive;
-    
     color: $black;
     background-color: $white;
 }
@@ -27,10 +26,9 @@ a {
 
 .wrapper {
     display: grid;
-    grid-template-columns: 132px 2fr 1.2fr;
+    grid-template-columns: 120px 2fr 1.2fr;
     column-gap: 3em;
     row-gap: 2em;
-    // gap: 1em;
     grid-template-areas:
      "sidebar header navigation"
      "sidebar header stat-boxes"
@@ -38,23 +36,48 @@ a {
      "sidebar courses statistics"
      "sidebar courses statistics"
      "sidebar courses premium-banner";
-    max-width: 100%;
+    // max-width: 100%;
     padding: 30px;
 
     @media (max-width: $xl) {
-        max-width: 960px;
+        // max-width: 960px;
+        grid-template-columns: 120px 1fr;
+        column-gap: 2em;
+        row-gap: 1.5em;
+        grid-template-areas:    
+        "sidebar navigation"
+        "sidebar header"
+        "sidebar stat-boxes"
+        "sidebar course"
+        "sidebar courses"
+        "sidebar statistics"
+        "sidebar premium-banner";
     }
 
     @media (max-width: $lg) {
-        max-width: 720px;
+        // max-width: 720px;
+        // max-width: 960px;
+        grid-template-columns: 1fr;
+        column-gap: 1.5em;
+        row-gap: 1em;
+       
+        grid-template-areas:
+        " sidebar"    
+        " navigation"
+        " header"
+        " stat-boxes"
+        " course"
+        " courses"
+        " statistics"
+        " premium-banner";
     }
 
     @media (max-width: $md) {
-        max-width: 540px;
+        // max-width: 540px;
     }
 
     @media (max-width: $sm) {
-        max-width: none;
+        // max-width: none;
     }
 }
 
@@ -68,6 +91,7 @@ img {
 
 /*import files*/
 @import "common";
+@import "slider";
 @import "sidebar";
 @import "header";
 @import "course";

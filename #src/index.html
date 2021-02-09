@@ -7,8 +7,10 @@
     <title>Dashboard</title>
     <link rel="shortcut icon" href="img/preview.png" type="image/png">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&family=Roboto:wght@400;700&display=swap"
+    <link
+        href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400;700&family=Roboto:wght@400;700&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 
@@ -40,7 +42,61 @@
             </div>
         </header>
 
-        <section class="course">course</section>
+        <section class="course">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="course__elem">
+                            <div class="course__logo">
+                                <img src="img/courses/figma.svg" alt="figma">
+                            </div>
+                            <div class="course__descr">
+                                <h4>Learn Figma</h4>
+                                <p class="text course__text">by Christopher Morgan</p>
+                            </div>
+                            <div class="course__complete">
+                                <span>89%</span>
+                            </div>
+                            <a href="#" class="btn">Continue</a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="course__elem">
+                            <div class="course__logo">
+                                <img src="img/courses/english.svg" alt="english">
+                            </div>
+                            <div class="course__descr">
+                                <h4>English B2</h4>
+                                <p class="text course__text">by Alejandro Velazquez</p>
+                            </div>
+                            <div class="course__complete">
+                                <span>89%</span>
+                            </div>
+                            <a href="#" class="btn">Continue</a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="course__elem">
+                            <div class="course__logo">
+                                <img src="img/courses/js.svg" alt="js">
+                            </div>
+                            <div class="course__descr">
+                                <h4>JavaScript</h4>
+                                <p class="text course__text">by Den Ivanov</p>
+                            </div>
+                            <div class="course__complete">
+                                <span>55%</span>
+                            </div>
+                            <a href="#" class="btn">Continue</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-nav">
+                <div class="slider-button-prev"></div>
+                <div class="slider-button-next"></div>
+            </div>
+        </section>
 
         <section class="courses">
             <div class="title">Courses</div>
@@ -453,17 +509,19 @@
         </section>
 
         <section class="navigation">
-            <div class="search">
+            <div class="navigation__search">
                 <img src="img/search.svg" alt="search">
                 <input type="text">
             </div>
-            <div class="notifications">
+            <div class="navigation__notifications">
                 <a href="#">
                     <img src="img/notifications.svg" alt="notifications">
                 </a>
             </div>
-            <div class="profile">
-                <img src="img/avatar.png" alt="avatar">
+            <div class="navigation__profile">
+                <a href="#">
+                    <img src="img/avatar.png" alt="avatar">
+                </a>
             </div>
         </section>
 
@@ -492,8 +550,8 @@
         </section>
     </div>
 
-
-    <script src="js/app.min.js" type="module"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="js/app.min.js"></script>
 </body>
 
 </html>

@@ -1,5 +1,20 @@
 .course {
+    display: grid;
+    grid-template-columns: 3fr 0.5fr;
+    align-items: center;
     grid-area: course;
     // width: 620px;
     height: 80px;
+    min-width: 0;
+}
+
+.course__elem {
+    display: grid;
+    grid-template-columns: 0.5fr 1.5fr 0.4fr auto;
+    column-gap: 2em;
+    align-items: center;
+    padding: 10px 25px 10px 10px;
+    margin-bottom: 15px;
+    background-color: $gray;
+    border-radius: 14px;
 }
