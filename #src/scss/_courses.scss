@@ -1,14 +1,11 @@
 .courses {
     grid-area: courses;
-    // width: 620px;
-    height: 554px;
 }
 
 .courses__wrap {
-    // height: 500px;
     margin-top: 10px;
     padding-right: 10px;
-    // overflow-y: auto;
+    overflow-y: auto;
 }
 
 .courses__item {
@@ -20,6 +17,10 @@
     margin-bottom: 15px;
     background-color: $gray;
     border-radius: 14px;
+
+    @media (max-width: $xxl) {
+        grid-template-columns: 0.2fr 1.6fr 0.8fr 0.4fr auto;
+    }
 }
 
 .course__logo {
@@ -49,6 +50,16 @@
         font-size: 13px;
         margin-left: 8px;
         padding-top: 4px;
+
+        @media (max-width: $xxl) {
+            text-align: center;
+            margin-left: 0;
+        }
+    }
+
+    @media (max-width: $xxl) {
+        flex-direction: column;
+        align-items: center;
     }
 }
 

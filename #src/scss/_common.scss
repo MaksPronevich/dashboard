@@ -11,6 +11,10 @@
         color: $black;
         background-color: $white;
     }
+
+    @media (max-width: $xxl) {
+        padding: 6px 18px;
+    }
 }
 
 .title {

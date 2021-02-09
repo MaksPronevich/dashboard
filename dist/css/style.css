@@ -252,12 +252,12 @@ img {
 
 .courses {
   grid-area: courses;
-  height: 554px;
 }
 
 .courses__wrap {
   margin-top: 10px;
   padding-right: 10px;
+  overflow-y: auto;
 }
 
 .courses__item {
@@ -454,6 +454,33 @@ img {
   padding: 20px;
   background-color: #F5F5F7;
   border-radius: 14px;
+}
+
+@media (max-width: 1399.98px) {
+  .btn {
+    padding: 6px 18px;
+  }
+
+  .courses__item {
+    grid-template-columns: 0.2fr 1.6fr 0.8fr 0.4fr auto;
+  }
+
+  .course__time span,
+  .course__rating span {
+    text-align: center;
+    margin-left: 0;
+  }
+
+  .course__time,
+  .course__rating {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
 }
 
 @media (max-width: 1199.98px) {
