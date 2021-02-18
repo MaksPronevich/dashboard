@@ -3,7 +3,6 @@
     grid-template-columns: 1fr 1fr;
     column-gap: 2em;
     grid-area: stat-boxes;
-    // width: 438px;
 }
 
 .box {
@@ -17,9 +16,6 @@
     &__num {
         font-size: 64px;
         font-weight: 700;
-    }
-
-    &__text {
-
+        margin-right: 11px;
     }
 }

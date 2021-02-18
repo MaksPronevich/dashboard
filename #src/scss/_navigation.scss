@@ -70,7 +70,7 @@
     align-items: center;
     padding: 5px 8px;
     border-radius: 10px;
-    
+    transition: all .1s linear;
 
     &:hover {
         background-color: $gray;
@@ -101,6 +101,7 @@
 .profile__header {
     display: flex;
     align-items: center;
+    margin-top: 8px;
 }
 
 .profile__avatar {
@@ -126,22 +127,19 @@
 
 .profile__list {
     list-style: none;
-    margin-left: 0;
 }
 
 .profile__item {
-    margin-left: 0;
 
     a {
-        display: block;
+        display: inline-block;
         color: $white;
-        padding: 5px;
+        padding: 3px;
         border-radius: 12px;
+        transition: all .1s linear;
 
         &:hover {
-            background-color: $white;
-            color: $black;
+            transform: translateX(10px);
         }
     }
-
 }

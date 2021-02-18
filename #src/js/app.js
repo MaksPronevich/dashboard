@@ -45,13 +45,7 @@ profileLink.addEventListener('click', (e) => {
 });
 
 document.addEventListener('click', (e) => {
-
-
-
-    if (!(e.target == profileBlock || profileBlock.contains(e.target)) &&
-        !(e.target === profileLink) &&
-        profileBlock.classList.contains('active')
-    ) {
+    if (!(e.target == profileBlock || profileBlock.contains(e.target)) && !(e.target === profileLink) && profileBlock.classList.contains('active')) {
         toggleProfileBlock();
     }
 });

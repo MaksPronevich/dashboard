@@ -61,10 +61,6 @@ img {
   margin: 10px 0px 24px;
 }
 
-.text.box__text {
-  margin-left: 11px;
-}
-
 .text.course__text {
   font-size: 13px;
 }
@@ -132,10 +128,12 @@ img {
 
 .slider-button-prev {
   background: url("../img/slider-btn-prev.svg") no-repeat;
+  cursor: pointer;
 }
 
 .slider-button-next {
   background: url("../img/slider-btn-next.svg") no-repeat;
+  cursor: pointer;
 }
 
 .wrapper {
@@ -430,6 +428,9 @@ img {
   align-items: center;
   padding: 5px 8px;
   border-radius: 10px;
+  -webkit-transition: all .1s linear;
+  -o-transition: all .1s linear;
+  transition: all .1s linear;
 }
 
 .profile-link:hover {
@@ -464,6 +465,7 @@ img {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  margin-top: 8px;
 }
 
 .profile__avatar {
@@ -488,23 +490,22 @@ img {
 
 .profile__list {
   list-style: none;
-  margin-left: 0;
-}
-
-.profile__item {
-  margin-left: 0;
 }
 
 .profile__item a {
-  display: block;
+  display: inline-block;
   color: #fff;
-  padding: 5px;
+  padding: 3px;
   border-radius: 12px;
+  -webkit-transition: all .1s linear;
+  -o-transition: all .1s linear;
+  transition: all .1s linear;
 }
 
 .profile__item a:hover {
-  background-color: #fff;
-  color: #000;
+  -webkit-transform: translateX(10px);
+  -ms-transform: translateX(10px);
+  transform: translateX(10px);
 }
 
 .stat-boxes {
@@ -534,6 +535,7 @@ img {
 .box__num {
   font-size: 64px;
   font-weight: 700;
+  margin-right: 11px;
 }
 
 .statistics {
@@ -553,10 +555,6 @@ img {
 }
 
 @media (max-width: 1399.98px) {
-  .btn {
-    padding: 6px 18px;
-  }
-
   .courses__item {
     grid-template-columns: 0.2fr 1.6fr 0.8fr 0.4fr auto;
   }

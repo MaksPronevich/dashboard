@@ -11,10 +11,6 @@
         color: $black;
         background-color: $white;
     }
-
-    @media (max-width: $xxl) {
-        padding: 6px 18px;
-    }
 }
 
 .title {
@@ -31,10 +27,6 @@
         margin: 10px 0px 24px;
     }
 
-    &.box__text {
-        margin-left: 11px;
-    }
-
     &.course__text {
         font-size: 13px;
     }
@@ -44,9 +36,6 @@
     margin-top: 16px;
 }
 
-.tabs__nav {
-
-}
 
 .tabs__list {
     display: flex;
