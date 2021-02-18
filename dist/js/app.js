@@ -1,5 +1,6 @@
 "use strict";
 
+// tabs
 var tabTitles = document.querySelectorAll('.tab__title');
 var tabBlocks = document.querySelectorAll('.tab__block');
 
@@ -19,7 +20,8 @@ tabTitles.forEach(function (tabBlock, i) {
     tabBlocks[i].classList.add('active');
     e.preventDefault();
   });
-});
+}); // slider
+
 new Swiper('.swiper-container', {
   navigation: {
     nextEl: '.slider-button-next',

@@ -1,3 +1,4 @@
+// tabs
 const tabTitles = document.querySelectorAll('.tab__title');
 const tabBlocks = document.querySelectorAll('.tab__block');
 
@@ -14,16 +15,15 @@ tabTitles.forEach((tabBlock, i) => tabBlock.addEventListener("click", e => {
 }));
 
 
+// slider
 new Swiper('.swiper-container', {
     navigation: {
         nextEl: '.slider-button-next',
         prevEl: '.slider-button-prev',
     },
-
     autoplay: {
         delay: 2000,
     },
-
     touchRatio: 2,
     grabCursor: true,
     loop: true,

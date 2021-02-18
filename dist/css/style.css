@@ -1,7 +1,3 @@
-.statistics {
-  border: 1px solid black;
-}
-
 *,
 *:before,
 *:after {
@@ -16,7 +12,6 @@ html {
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
   font-family: 'Baloo Bhai 2', cursive;
   color: #000;
   background-color: #fff;
@@ -24,17 +19,6 @@ body {
 
 a {
   text-decoration: none;
-}
-
-.wrapper {
-  display: grid;
-  grid-template-columns: 120px 2fr 1.2fr;
-  -webkit-column-gap: 3em;
-  -moz-column-gap: 3em;
-  column-gap: 3em;
-  row-gap: 2em;
-  grid-template-areas: "sidebar header navigation" "sidebar header stat-boxes" "sidebar course statistics" "sidebar courses statistics" "sidebar courses statistics" "sidebar courses premium-banner";
-  padding: 30px;
 }
 
 img {
@@ -154,6 +138,18 @@ img {
   background: url("../img/slider-btn-next.svg") no-repeat;
 }
 
+.wrapper {
+  display: grid;
+  grid-template-columns: 120px 2fr 1.2fr;
+  -webkit-column-gap: 3em;
+  -moz-column-gap: 3em;
+  column-gap: 3em;
+  row-gap: 2em;
+  grid-template-areas: "sidebar header navigation" "sidebar header stat-boxes" "sidebar course statistics" "sidebar courses statistics" "sidebar courses statistics" "sidebar courses premium-banner";
+  padding: 30px;
+  width: 100%;
+}
+
 .sidebar {
   grid-area: sidebar;
   background-color: #000;
@@ -193,11 +189,37 @@ img {
 }
 
 .sidebar__item {
+  width: 100%;
+  position: relative;
+  text-align: center;
   margin-bottom: 60px;
+  -webkit-transition: all 2s linear;
+  -o-transition: all 2s linear;
+  transition: all 2s linear;
+}
+
+.sidebar__item img {
+  margin: 0px auto;
+}
+
+.sidebar__item span {
+  width: 100%;
+  position: absolute;
+  display: none;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-top: 6px;
 }
 
 .sidebar__item:last-child {
   margin-top: 150px;
+}
+
+.sidebar__item:hover span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .header {
@@ -231,7 +253,6 @@ img {
   -ms-flex-align: center;
   align-items: center;
   grid-area: course;
-  height: 80px;
   min-width: 0;
 }
 
@@ -255,6 +276,8 @@ img {
 }
 
 .courses__wrap {
+  height: 490px;
+  max-height: 100%;
   margin-top: 10px;
   padding-right: 10px;
   overflow-y: auto;
@@ -501,6 +524,16 @@ img {
     -moz-column-gap: 1.5em;
     column-gap: 1.5em;
     row-gap: 1em;
-    grid-template-areas: " sidebar"     " navigation" " header" " stat-boxes" " course" " courses" " statistics" " premium-banner";
+    grid-template-areas: "navigation" "header" "stat-boxes" "course" "courses" "statistics" "premium-banner";
+  }
+
+  .sidebar {
+    display: none;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .wrapper {
+    max-width: none;
   }
 }
