@@ -28,3 +28,34 @@ new Swiper('.swiper-container', {
     grabCursor: true,
     loop: true,
 });
+
+
+const profileLink = document.querySelector('.profile-link');
+const profileBlock = document.querySelector('.profile');
+
+
+const toggleProfileBlock = () => {
+    profileBlock.classList.toggle('active');
+};
+
+
+profileLink.addEventListener('click', (e) => {
+    toggleProfileBlock();
+    e.preventDefault();
+});
+
+document.addEventListener('click', (e) => {
+
+
+
+    if (!(e.target == profileBlock || profileBlock.contains(e.target)) &&
+        !(e.target === profileLink) &&
+        profileBlock.classList.contains('active')
+    ) {
+        toggleProfileBlock();
+    }
+});
+
+
+
+

@@ -5,13 +5,12 @@
     align-items: center;
     grid-area: header;
     padding: 30px;
-    // width: 620px;
-    // height: 191.25px;
     background-color: $gray;
     border-radius: 14px;
 }
 
-.header__desrc {
+.header__desrcription {
+    margin: 0px auto;
    
     h2 {
         font-size: 36px;
