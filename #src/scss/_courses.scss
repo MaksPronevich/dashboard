@@ -23,6 +23,10 @@
     @media (max-width: $xxl) {
         grid-template-columns: 0.2fr 1.6fr 0.8fr 0.4fr auto;
     }
+
+    &:last-child {
+        margin-bottom: 0;
+    }
 }
 
 .course__logo {

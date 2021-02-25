@@ -30,26 +30,26 @@ new Swiper('.swiper-container', {
 });
 
 
+// profie block
 const profileLink = document.querySelector('.profile-link');
 const profileBlock = document.querySelector('.profile');
-
 
 const toggleProfileBlock = () => {
     profileBlock.classList.toggle('active');
 };
-
 
 profileLink.addEventListener('click', (e) => {
     toggleProfileBlock();
     e.preventDefault();
 });
 
+
 document.addEventListener('click', (e) => {
-    if (!(e.target == profileBlock || profileBlock.contains(e.target)) && !(e.target === profileLink) && profileBlock.classList.contains('active')) {
+    if (
+        !(e.target === profileBlock || profileBlock.contains(e.target)) &&
+        !(e.target === profileLink || profileLink.contains(e.target)) &&
+        profileBlock.classList.contains('active')
+    ) {
         toggleProfileBlock();
     }
 });
-
-
-
-

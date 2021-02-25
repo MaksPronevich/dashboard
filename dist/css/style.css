@@ -300,6 +300,10 @@ img {
   border-radius: 14px;
 }
 
+.courses__item:last-child {
+  margin-bottom: 0;
+}
+
 .course__logo {
   width: 64px;
   height: 64px;

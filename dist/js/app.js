@@ -33,7 +33,8 @@ new Swiper('.swiper-container', {
   touchRatio: 2,
   grabCursor: true,
   loop: true
-});
+}); // profie block
+
 var profileLink = document.querySelector('.profile-link');
 var profileBlock = document.querySelector('.profile');
 
@@ -46,7 +47,7 @@ profileLink.addEventListener('click', function (e) {
   e.preventDefault();
 });
 document.addEventListener('click', function (e) {
-  if (!(e.target == profileBlock || profileBlock.contains(e.target)) && !(e.target === profileLink) && profileBlock.classList.contains('active')) {
+  if (!(e.target === profileBlock || profileBlock.contains(e.target)) && !(e.target === profileLink || profileLink.contains(e.target)) && profileBlock.classList.contains('active')) {
     toggleProfileBlock();
   }
 });
